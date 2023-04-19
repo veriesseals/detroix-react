@@ -1,0 +1,279 @@
+/* --------------------------------------- */
+/* Global */
+
+/* *{
+    outline: 1px dotted red;
+} */
+
+/* --------------------------------------- */
+/* Root */
+:root {
+    --primColor: #131c29;
+    --secColor: #ff8901;
+    --btnColor: #1e3346;
+    --font: 'Oswald', sans-serif;
+}
+
+/* --------------------------------------- */
+/* Body */
+
+body {
+    background-color: #f5f5f5;
+}
+
+/* --------------------------------------- */
+/* Header */
+
+.topheader{
+    padding: 10px 0;
+    background-color: var(--primColor);
+}
+
+.topheader a {
+    color: #777;
+    font-size: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.topheader a:hover{
+    color: var(--secColor);
+}
+
+.top-nav {
+    margin: 0;
+    padding: 0;
+
+}
+
+.top-nav-item{
+    background-color: 1px solid #7777;
+}
+
+.top-nav-item:last-child{
+    border: none;
+}
+
+/* --------------------------------------- */
+/* Bottom Nav */
+
+.bottom-nav{
+    padding: 30px 0;
+}
+
+.bottom-nav-link {
+    margin: 0 3px;
+    background-color: var(--primColor);
+    color:#ffff;
+    font-family: var(--font);
+    text-transform: uppercase;
+    font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (1600 - 300)));
+    
+}
+
+.bottom-nav-link:hover{
+    color: #fff;
+    background-color: var(--secColor);
+}
+
+
+/* --------------------------------------- */
+/* main */
+
+.hero-img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.sliders {
+    display: flex;
+    justify-content: space-around;
+    width: 80px;
+    height: 30px;
+    /* border: 1px solid orange; */
+    margin: 20px auto;
+}
+
+.slider {
+    width: 25px;
+    height: 25px;
+    background: #777;
+    border-radius: 50%;
+}
+
+.slider:hover{
+    background-color: var(--secColor);
+}
+
+/* --------------------------------------- */
+/* smart strong stable  Section 2*/
+
+.content {
+    border-right: 1px solid #777;
+    border-left: 1px solid #777;
+}
+
+.content-box {
+    border-top: 1px solid #777;
+}
+
+.content-box:nth-child(2) {
+    /* padding-left: 10px; */
+    border-right: 1px solid #777;
+    border-left: 1px solid #777;
+
+}
+
+.content-header {
+    color: var(--primColor);
+    font-family: var(--font);
+    font-size: calc(26px + (48 - 26) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.content-img {
+    width: 100%;
+}
+
+
+.smart-text, .strong-text, .stable-text {
+    margin-top: 30px;
+    width: 90%;
+    color: #777;
+    font-family: var(--font);
+    font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.sect-02-item{
+    margin-bottom: 20px;
+}
+/* --------------------------------------- */
+/* Button */
+
+.more-btn {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: var(--font);
+    background-color: var(--btnColor);
+}
+
+/* --------------------------------------- */
+/* Top Footer */
+
+.topfooter {
+    padding: 50px 0;
+    background: radial-gradient( circle at top, #385a7f, var(--primColor));
+}
+
+.footer-content{
+    position: relative;
+    height: 60vh;
+    height: 100%;
+}
+
+@media (max-width: 576px){
+    .footer-content{
+        padding: 30px 0;
+    }
+}
+
+@media (min-width: 577px)and (max-width: 991px){
+    .footer-content {
+        height: 40vh;
+    }
+}
+
+.footer-content .more-btn {
+    position: absolute;
+    bottom: 0;
+
+}
+
+.footer-header {
+    font-family: var(--font);
+}
+
+.service-list{
+    padding: 15px;
+    font-family: var(--font);
+    list-style-image: url('/media/cog.png');
+}
+
+
+.service-item {
+    font-size: 12px;
+    line-height: 2;
+}
+
+.opp-list {
+    padding-left: 15px;
+    list-style-image: url('../media/chat.png');
+}
+
+.opp-header, .news-header {
+    font-size: 12px;
+}
+
+.opp-item, .news-text {
+    font-family: var(--font);
+    font-size: 12px;
+}
+
+@media (max-width: 576px){
+    .service-item, .opp-item, .news-text, .opp-header, .news-header {
+        font-size: 16px;
+    }
+}
+
+.date-div {
+    width: 60px;
+    height: 60px;
+    font-family: var(--font);
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.date-div p {
+    margin: 0;
+    padding: 0;
+}
+
+.date-div1 {
+    background-color: red;
+
+}
+
+.date-div2 {
+    background-color: purple;
+
+}
+
+.date-div3 {
+    background-color: teal;
+
+}
+
+.text-div {
+    width: 70%;
+}
+
+.news-list {
+    padding-left: 0;
+}
+
+#news-more{
+    margin-top: 55px;
+}
+
+/* --------------------------------------- */
+/* Bottom Footer */
+
+.bottom-footer{
+    padding: 20px 0 50px;
+    background-color: #0b1016;
+
+}
